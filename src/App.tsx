@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <Rocket className="w-8 h-8 text-blue-500" />
-            <span className="text-xl font-bold tracking-tighter text-white">2026 北京国际商业航天展</span>
+            <span className="text-xl font-bold tracking-tighter text-white">环境可靠性EMC试验</span>
           </div>
           
           <div className="hidden md:block">
@@ -387,7 +387,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <Rocket className="w-6 h-6 text-blue-500" />
-              <span className="text-lg font-bold text-white">2026 北京国际商业航天展</span>
+              <span className="text-lg font-bold text-white">环境可靠性EMC试验</span>
             </div>
             <p className="text-gray-400 text-sm max-w-sm">
               中国领先的商业航天全产业链服务中枢。通过将产品展示与 Wiki 知识库、在线检测预约三者打通，赋能新质生产力。
@@ -415,7 +415,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-8 border-t border-white/5 text-center text-xs text-gray-500">
-          © 2026 北京国际商业航天展览会 组委会. All Rights Reserved.
+          © 环境可靠性EMC试验. All Rights Reserved.
         </div>
       </div>
     </footer>
