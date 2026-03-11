@@ -109,7 +109,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-full">
-            2026.05.18 - 05.20 | 北京国家会议中心
+            2026.03.12 - 03.14 | 上海国际博览中心
           </span>
           <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white mb-6 leading-tight">
             赋能新质生产力<br />
