@@ -1,10 +1,20 @@
 # build stage
 FROM node:18-alpine as build-stage
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
+
+# Install native build tools (required for better-sqlite3 and other C++ addons)
+RUN apk add --no-cache python3 make g++
+
+# Enable pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+# Install dependencies using pnpm
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+# Copy source code and build
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # production stage
 FROM nginx:stable-alpine as production-stage
